@@ -1,7 +1,7 @@
 var IntroPlayView = function (model, container) {
 
 	var h1 = $("<p>Spel introductie</p>");
-  var volgendeButton    = $( "<center><a class='btn button btn-default pull-right' role='button'>Continue &raquo;</a><center>" );
+  var volgendeButton    = $( "<center><a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a><center>" );
   var clearfix          = $( '<div class="clearfix">' );
 
   this.volgendeButton       = volgendeButton;

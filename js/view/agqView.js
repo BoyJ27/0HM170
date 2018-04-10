@@ -6,7 +6,7 @@ var AgqView = function (model, container){
 
 	var questionList		= $( "<div class='list-group' id='setQuestions'>" );
 	var h1 = $("<p>AGQ Vragen</p>");
-	var volgendeButton	 		= $( "<center><a class='btn button btn-default pull-right' id='extramargin' role='button'>Continue &raquo;</a></center>" );
+	var volgendeButton	 		= $( "<center><a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a></center>" );
 	var clearfix				= $( '<div class="clearfix">' );
 	var questions;
 
@@ -29,7 +29,7 @@ var AgqView = function (model, container){
 				item 			.append(text);
 			var radioContainer  = $( "<div class='radioContainer'>" );
 			for( i=0; i < value.scale; i++ ){
-				var label = $( '<label class="radio-inline" style="width:8%">' );
+				var label = $( '<label class="radio-inline" style="width:15%">' );
 					var radio = $( '<input type="radio">' );
 						radio.attr( 'value', i+1 );
 						radio.attr( 'name', value.nr );

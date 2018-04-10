@@ -1,7 +1,7 @@
 var DebriefView = function (model, container){
 
-  var p1 = $("<p>You just answered all the questions. Although we indicated you would return to the game, you can from now complete your participation. You can do so by clicking on the ‘Complete my participation’ button. However, if you still want to continue the game, you can click on ‘Play the game’. At any time, you can still click on ‘Complete my participation’ to finish up. We thank you for your time and participation. </p>")
-  var p2 = $("<p>If you entered your email address, you will automatically enter the lottery for a gift card. If you are selected, you will receive an email from us within a month containing a digital version of the gift card. Thanks again for your participation. </p>")
+  var p1 = $("<p>U heeft alle vragen beantwoord. Hoewel we aan gaven dat u terug naar het spel zou gaan, kunt u vanaf nu beslissen uw deelname te beëindigen. U kunt dit doen door op de knop ‘Voltooi mijn deelname’ te klikken. Echter, als u het spel nog wilt spelen, kunt u ook klikken op ‘Speel het spel’. Op elk moment tijdens het spelen kunt u klikken op de knop ‘Voltooi mijn deelname’ om te eindigen. </p>")
+  var p2 = $("<p>Als u uw emailadres heeft ingevuld, doet u automatisch mee aan de loterij voor een €10,- cadeaukaart van Bol.com. Als u geselecteerd wordt, ontvangt u een email van ons binnen een maand met bijgevoegd een digitale versie van de cadeaukaart. Nogmaals bedankt voor uw deelname.</p>")
   container.append(p1, p2);
 
 

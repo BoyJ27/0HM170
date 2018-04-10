@@ -4,7 +4,7 @@ var HeaderView = function ( model, container ){
 					  Variable Declarations
 	***********************************************************/
 	//var h2 						= $( "<h2>Welkom!</h2>" );
-	var h2						= $( "<h2>Welcome!</h2>");
+	var h2						= $( "<h2>Welkom!</h2>");
 	var p 						= $( "<p></p>" );
 	var vrienden 				= [];
 	var counter = 1;
@@ -29,23 +29,23 @@ var HeaderView = function ( model, container ){
 	this.update = function( args ){
 
 		if( args == "consentDone" ){
-			h2.html( "Introduction to Mastermind");
+			h2.html( "Introductie Mastermind");
 		}
 
 		if( args == "introPlayDone" ){
-			h2.html( "Playing Mastermind");
+			h2.html( "Mastermind Spelen");
 		}
 
 		if( args == "playingDone" ){
-			h2.html( "Reflection");
+			h2.html( "Reflectie");
 		}
 
 		if( args == "agqDone" ){
-			h2.html( "Demographics");
+			h2.html( "Demografische vragen");
 		}
 
 		if( args == "demographicsDone"){
-			h2.html( "Thank You!");
+			h2.html( "Hartelijk Dank!");
 		}
 
 /*
