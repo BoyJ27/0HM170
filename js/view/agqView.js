@@ -3,7 +3,8 @@ var AgqView = function (model, container){
 	var questionList			= $( "<div class='list-group' id='setQuestions'>" );
 	var p 						= $("<p>U heeft net een tijdje MasterMind gespeeld. We vragen u nu een aantal vragen te beantwoorden.</p>");
 	var h3						= $("<h3>Houd uw ervaring met het spelen van daarnet in gedachten, en geef voor elke onderstaande uitspraak aan in welke mate u het ermee eens bent.</h3>")
-	var volgendeButton	 		= $( "<center><a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a></center>" );
+	var volgendeButtonCont		= $("<center></center>");
+	var volgendeButton	 		= $( "<a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a>" );
 	var clearfix				= $( '<div class="clearfix">' );
 	var questions;
 	var TableCont				= $("<div style='margin-top: 30px; margin-bottom: 20px; background-color: white; border-style: solid; border-color: lightgrey; border-width: 1px;'></div>");
@@ -50,7 +51,9 @@ var AgqView = function (model, container){
 	
 	TableCont.append(Table);
 
-	container.append(p, h3, TableCont, volgendeButton, clearfix );
+	volgendeButtonCont.append(volgendeButton);
+
+	container.append(p, h3, TableCont, volgendeButtonCont, clearfix );
 
 
 	/***********************************************************

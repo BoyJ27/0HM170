@@ -29,14 +29,17 @@ var DemographicsView = function( model, container ){
 	var emailtext = $ ('<div style="font-size: 12px; font-weight:bold; width: 100%"><p class="marginbottom"}>Laat hier alstublieft uw e-mailadres achter als u mee wilt doen aan de loting voor een van de cadeaubonnen (optional):</p> ');
 	var emailInput = $('<div style="font-size: 12px; font-weight:bold; margin-bottom: 12px; width: 100%" class="input-group"><input type="email" style="font-weight: normal; width: 250px" type="text" pattern="\d*" id="emailInput" placeholder="Vul uw e-mailadres in.">');
 
-	var volgendeButton	 	= $( "<center><a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a></center>" );
+	var volgendeButtonCont		= $("<center></center>");
+	var volgendeButton	 	= $( "<a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a>" );
 	var clearfix			= $('<div class="clearfix">' );
 
 	var value2, value3, value4, value5;
 
 	//form.append( emailContainer);
 
-	container.append(introduction, geslachttext, geslachtinput, leeftijdtext, leeftijdinput, experiencetext, experienceinput, selfratetext, selfrateinput, gamefreqtext, gamefreqinput, remarkstext, remarksinput, emailtext, emailInput, volgendeButton, clearfix );
+	volgendeButtonCont.append(volgendeButton);
+
+	container.append(introduction, geslachttext, geslachtinput, leeftijdtext, leeftijdinput, experiencetext, experienceinput, selfratetext, selfrateinput, gamefreqtext, gamefreqinput, remarkstext, remarksinput, emailtext, emailInput, volgendeButtonCont, clearfix );
 
 
 

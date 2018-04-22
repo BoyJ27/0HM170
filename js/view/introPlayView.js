@@ -1,12 +1,15 @@
 var IntroPlayView = function (model, container) {
 
-	var h1 = $("<p>Spel introductie</p>");
-  var volgendeButton    = $( "<center><a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a><center>" );
+  var h1 = $("<p>Spel introductie</p>");
+  var volgendeButtonCont		= $("<center></center>");
+  var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
+
+  volgendeButtonCont.append(volgendeButton);
 
   this.volgendeButton       = volgendeButton;
 
-  container.append(h1, volgendeButton, clearfix);
+  container.append(h1, volgendeButtonCont, clearfix);
 
   model.addObserver( this );
   this.update = function(args){
