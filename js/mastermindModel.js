@@ -134,6 +134,7 @@ var MastermindModel = function( options ){
         tid: tid
       }).done( function( data ) {
         currentUserId = data;
+        window.location = "#" + currentUserId; 
         console.log(currentUserId);
       });
   }
