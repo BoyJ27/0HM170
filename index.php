@@ -52,6 +52,9 @@
             </div>
             <div id="mainApplication" class='col-md-12 col-md-offset-0' style='width:100%'>
 
+                <div id="toosmallView" >
+                </div>
+
                 <div id="informedConsent" >
                 </div>
 
@@ -113,5 +116,8 @@
 
         <script src="js/view/endView.js"></script>
         <script src="js/controller/endController.js"></script>
+
+        <script src="js/view/toosmallView.js"></script>
+        <script src="js/controller/toosmallController.js"></script>
     </body>
 </html>

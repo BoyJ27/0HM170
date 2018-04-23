@@ -23,7 +23,7 @@ var PlayView = function (model, container){
 		if( args == "introPlayDone"){
       container.show();
 			if (model.gamecount == 1){
-		  textCont.append(h1);
+			textCont.append(h1);
 			buttonCont.append(volgendeButtonCont);
 
 		} else if (model.gamecount == 2) {

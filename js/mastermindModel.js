@@ -121,7 +121,7 @@ var MastermindModel = function( options ){
 
   createUser = function(){
     console.log("Creating user");
- 
+
     var path = window.location.href;
     var arr = path.split('/');
     var tidstring = arr[arr.length-1];
@@ -172,7 +172,7 @@ var MastermindModel = function( options ){
   setAgqQuestions = function(question, value) {
     var questionId = question;
     var val = value;
-    
+
     $.post("ajax/insertAgqQuestion.php",
       {
         userId: currentUserId,
@@ -192,13 +192,13 @@ var MastermindModel = function( options ){
     var remarks = remarksval;
     var email = emailval;
 
-    $.post("ajax/insertDemo.php", 
+    $.post("ajax/insertDemo.php",
       {
         userId: currentUserId,
         age: age,
         gender: gender,
         experienceM: experienceM,
-        selfrate: selfrate,        
+        selfrate: selfrate,
         experienceG: experienceG,
         remarks: remarks,
         email: email
@@ -232,7 +232,7 @@ var MastermindModel = function( options ){
     $.post("ajax/insertPlaythrough.php",
       {
         userId: currentUserId,
-        playthrough: playthrough 
+        playthrough: playthrough
       }).done(function(){
         console.log("Playthrough saved.");
       });
@@ -276,6 +276,10 @@ var MastermindModel = function( options ){
     notifyObservers( "experimentEnd" );
   }
 
+  screensizeOkay = function(){
+    notifyObservers("screensizeOkay")
+  }
+
   /***********************************************************
             Public Functions
   ***********************************************************/
@@ -295,6 +299,7 @@ var MastermindModel = function( options ){
 
   this.trackGeslacht = trackGeslacht;
   this.trackOpleiding = trackOpleiding;
+  this.screensizeOkay = screensizeOkay;
 
   this.setConsent           = setConsent;
   this.demographicsCheck    = demographicsCheck;
