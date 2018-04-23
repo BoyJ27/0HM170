@@ -5,6 +5,7 @@ var PlayController = function ( model, view ){
     model.setGame();
   });
   view.stoppen.click(function(){
+    model.setFinalStop();
     model.experimentEnd();
   });
 }

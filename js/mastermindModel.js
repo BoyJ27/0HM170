@@ -239,6 +239,15 @@ var MastermindModel = function( options ){
       });
   }
 
+  setFinalStop = function () {
+    $.post("ajax/insertFinalStop.php",
+    {
+      userId: currentUserId
+    }).done(function(){
+      console.log("Final stop saved.");
+    });
+  }
+
   setConsent = function (value){
     consent = value;
   }
@@ -296,6 +305,7 @@ var MastermindModel = function( options ){
   this.setIntroPlay               = setIntroPlay;
   this.setGame                    = setGame;
   this.setPlaythrough             = setPlaythrough;
+  this.setFinalStop               = setFinalStop;
   this.gamecount                  = gamecount;
 
   this.trackGeslacht = trackGeslacht;
