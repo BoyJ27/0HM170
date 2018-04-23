@@ -25,4 +25,7 @@ $(function(){
 
 	var endView  = new EndView( mastermindModel, $("#endView"));
 	var endController = new EndController (mastermindModel, endView);
+
+	var toosmallView  = new ToosmallView( mastermindModel, $("#toosmallView"));
+	var toosmallController = new ToosmallController (mastermindModel, toosmallView);
 })

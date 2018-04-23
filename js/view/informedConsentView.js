@@ -1,6 +1,6 @@
 var InformedConsentView = function(model, container){
 
-	var p = $("<p>Welkom bij deze studie over online gaming. Tijdens het experiment speelt u MasterMind en beantwoordt u een aantal vragen op deze site. Dit duurt ongeveer 15 minuten. Deelname heeft geen risico’s. Tijdens uw deelname kunt u op elk moment om elke reden stoppen door de browser te sluiten. Als u deelneemt, kunt u meedoen in een loterij voor een €10,- Bol.com cadeaukaart. Één in elke 10 participanten ontvangt een cadeaukaart binnen 6 weken na deelname.</p>"); 
+	var p = $("<p>Welkom bij deze studie over online gaming. Tijdens het experiment speelt u MasterMind en beantwoordt u een aantal vragen op deze site. Dit duurt ongeveer 15 minuten. Deelname heeft geen risico’s. Tijdens uw deelname kunt u op elk moment om elke reden stoppen door de browser te sluiten. Als u deelneemt, kunt u meedoen in een loterij voor een €10,- Bol.com cadeaukaart. Één in elke 10 participanten ontvangt een cadeaukaart binnen 6 weken na deelname.</p>");
 	var p2 = $("<p><b>Neem alstublieft maar één keer deel aan dit onderzoek.</b> Door meerdere keren deel te nemen vergroot u uw winkans niet en helpt u ons ook niet verder in ons onderzoek.</p>");
 	var p3 = $("<p>In deze studie doen we onderzoek naar hoe MasterMind gespeeld wordt. Daarvoor slaan we tijdens het experiment game acties en antwoorden op de vragen op. Alle informatie wordt alleen gebruikt voor onderzoek en wordt anoniem en confidentieel bewaard.*</p>");
 	var p4 = $("<p>Als u met bovenstaande instemt, klik dan op ‘Start mijn deelname’.</p>");
@@ -25,14 +25,13 @@ var InformedConsentView = function(model, container){
 
 	model.addObserver( this );
 	this.update = function( args ){
-		if( args == "consentDone" ){
-			console.log("Close informed consent, proceed to Intro Play");
-			container.hide();
+		if(args == "screensizeOkay"){
+			container.show();
 		}
 		/*if( args == "manCheckDone" ){
 			console.log("Close informed consent, proceed to Filter Measures");
 			container.hide();
 		}*/
 	}
-
+ container.hide();
 }
