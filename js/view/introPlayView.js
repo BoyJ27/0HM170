@@ -13,7 +13,6 @@ var IntroPlayView = function (model, container) {
 
   model.addObserver( this );
   this.update = function(args){
-    //if( args == "userCreated"){
     if ( args == "consentDone"){
         //The container is visible, the elements within it might be hidden
         container.show();

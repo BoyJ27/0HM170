@@ -8,7 +8,6 @@
 
 	$database->insert("users",[
 			"id"			=> $max+1,
-			"conditie" 		=> $_POST['conditie'],
 			"tid"			=> $_POST['tid'],
 	]);
 

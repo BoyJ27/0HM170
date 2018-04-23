@@ -121,6 +121,7 @@ var MastermindModel = function( options ){
 
   createUser = function(){
     console.log("Creating user");
+ 
     var path = window.location.href;
     var arr = path.split('/');
     var tidstring = arr[arr.length-1];
@@ -130,10 +131,10 @@ var MastermindModel = function( options ){
 
     $.post( "ajax/insertUser.php",
       {
-        conditie: o.condition,
         tid: tid
       }).done( function( data ) {
         currentUserId = data;
+        console.log(currentUserId);
       });
   }
 
@@ -207,6 +208,36 @@ var MastermindModel = function( options ){
 
   }
 
+  setIntroPlay = function () {
+    $.post("ajax/insertIntro.php",
+      {
+        userId: currentUserId
+      }).done(function(){
+        console.log("Intro play saved.");
+      });
+  }
+
+  setGame = function () {
+    $.post("ajax/insertGame.php",
+      {
+        userId: currentUserId
+      }).done(function(){
+        console.log("Game saved.");
+      });
+  }
+
+  setPlaythrough = function (playt) {
+    var playthrough = playt;
+
+    $.post("ajax/insertPlaythrough.php",
+      {
+        userId: currentUserId,
+        playthrough: playthrough 
+      }).done(function(){
+        console.log("Playthrough saved.");
+      });
+  }
+
   setConsent = function (value){
     consent = value;
   }
@@ -257,6 +288,9 @@ var MastermindModel = function( options ){
   this.newAgqQuestions            = newAgqQuestions;
   this.setAgqQuestions            = setAgqQuestions;
   this.setDemoQuestions           = setDemoQuestions;
+  this.setIntroPlay               = setIntroPlay;
+  this.setGame                    = setGame;
+  this.setPlaythrough             = setPlaythrough;
   this.gamecount                  = gamecount;
 
   this.trackGeslacht = trackGeslacht;
