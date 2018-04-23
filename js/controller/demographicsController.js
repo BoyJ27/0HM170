@@ -18,7 +18,7 @@ var DemographicsController = function( model, view ){
 		console.log("Email : " + email);
 
 		if( gender != 0  && experienceMastermind != 0 && experienceGames != 0 && selfrate != 0 && age.length != 0) {
-			//model.updateUser(email, age);
+			model.setDemoQuestions(age, gender, experienceMastermind, experienceGames, selfrate, remarks, email);
 			model.demographicsDone();
 		} else {
 			alert( "You've probably missed one question!" );

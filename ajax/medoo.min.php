@@ -17,7 +17,7 @@ class medoo {
 	// Optional
 	protected $port = 3306;
 	protected $charset = 'utf8';
-	protected $database_name = 'vlabnl_eb';
+	protected $database_name = 'gamelab_18';
 	protected $option = array();
 	//protected $socket = /tmp/mysql.sock;
 

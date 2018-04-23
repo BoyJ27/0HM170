@@ -168,32 +168,43 @@ var MastermindModel = function( options ){
     notifyObservers( 'playingDone');
   }
 
-  setAgqQuestions = function(question, value, place) {
+  setAgqQuestions = function(question, value) {
     var questionId = question;
     var val = value;
-    var nrInOrder = place;
-
+    
     $.post("ajax/insertAgqQuestion.php",
       {
         userId: currentUserId,
-        conditie: o.condition,
-        screen: atRecom,
         questionId: questionId,
-        value: val,
-        nrInOrder: nrInOrder
+        value: val
       }).done(function(){
       console.log("The question + answer are saved in the DB");
     });
   }
 
-  getAgq1Questions = function(){
-    //qualityQuestions = shuffle(defaultQualityQuestions);
-    return defaultAGQ1;
-  }
+  setDemoQuestions = function(ageval, genderval, experienceMastermindval, experienceGamesval, selfrateval, remarksval, emailval) {
+    var age = ageval;
+    var gender = genderval;
+    var experienceM = experienceMastermindval;
+    var experienceG = experienceGamesval;
+    var selfrate = selfrateval;
+    var remarks = remarksval;
+    var email = emailval;
 
-  getAgq2Questions = function(){
-    //qualityQuestions = shuffle(defaultQualityQuestions);
-    return defaultAGQ2;
+    $.post("ajax/insertDemo.php", 
+      {
+        userId: currentUserId,
+        age: age,
+        gender: gender,
+        experienceM: experienceM,
+        selfrate: selfrate,        
+        experienceG: experienceG,
+        remarks: remarks,
+        email: email
+      }).done(function(){
+        console.log("The question + answer are saved in the DB");
+      });
+
   }
 
   setConsent = function (value){
@@ -245,8 +256,7 @@ var MastermindModel = function( options ){
 
   this.newAgqQuestions            = newAgqQuestions;
   this.setAgqQuestions            = setAgqQuestions;
-  this.getAgq1Questions           = getAgq1Questions;
-  this.getAgq2Questions           = getAgq2Questions;
+  this.setDemoQuestions           = setDemoQuestions;
   this.gamecount                  = gamecount;
 
   this.trackGeslacht = trackGeslacht;

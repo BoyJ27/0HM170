@@ -4,14 +4,11 @@
 
 	$database = new medoo();
 	
-	$data = $database->insert("qualityquestions",array(
+	$data = $database->insert("agqquestions",array(
 
-			"userId" 				=> $_POST['userId'],
-			"conditie"				=> $_POST['conditie'],
-			"screen" 				=> $_POST['screen'],
-      "questionId" => $_POST['questionId'],
-      "value" => $_POST['value'],
-			"nrInOrder" => $_POST['nrInOrder'],
+			"userId" 			=> $_POST['userId'],
+			"questionId"		=> $_POST['questionId'],
+			"value" 			=> $_POST['value'],
       
 	));
 

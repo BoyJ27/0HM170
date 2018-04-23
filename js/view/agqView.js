@@ -33,9 +33,9 @@ var AgqView = function (model, container){
 		} 
 		var row;
 		if(index%2 == 0) {
-			row = $("<tr style='background-color:#FAFAFA'></tr>");
+			row = $("<tr class='item-row' id='" + index + "' style='background-color:#FAFAFA'></tr>");
 		} else {
-			row = $("<tr></tr>");
+			row = $("<tr class='item-row' id='" + index + "'></tr>");
 		}
 		var textcell = $("<th style='width: 50%; padding-left: 20px; font-weight: normal'><p>" + value + "</p></th>");
 

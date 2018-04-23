@@ -6,14 +6,14 @@
   
   $data = $database->insert("demographics",array(
 
-      "userId"			=> $_POST['userId'],
-      "conditie" 		=> $_POST['conditie'],
-      "email" 		=> $_POST['email'],
-      "leeftijd" 		=> $_POST['leeftijd'],
-      "opleiding" 		=> $_POST['opleiding'],
-      "man" 		=> $_POST['man'],
-			"woon" 		=> $_POST['woon'],
-			"inkomen" 		=> $_POST['inkomen'],
+      "userId"			  => $_POST['userId'],
+      "gender" 		    => $_POST['gender'],
+      "age" 		      => $_POST['age'],
+      "experienceM" 	=> $_POST['experienceM'],
+      "selfrate" 		  => $_POST['selfrate'],
+      "experienceG" 	=> $_POST['experienceG'],
+			"remarks" 		  => $_POST['remarks'],
+			"email" 		    => $_POST['email'],
       
 	));
 
