@@ -2,12 +2,12 @@ var AgqView = function (model, container){
 
 	var questionList			= $( "<div class='list-group' id='setQuestions'>" );
 	var p 						= $("<p>U heeft net een tijdje MasterMind gespeeld. We vragen u nu een aantal vragen te beantwoorden.</p>");
-	var h3						= $("<h3>Houd uw ervaring met het spelen van daarnet in gedachten, en geef voor elke onderstaande uitspraak aan in welke mate u het ermee eens bent.</h3>")
+	var h3						= $("<h5><b>Houd uw ervaring met het spelen van daarnet in gedachten, en geef voor elke onderstaande uitspraak aan in welke mate u het ermee eens bent.</h5></p>")
 	var volgendeButtonCont		= $("<center></center>");
 	var volgendeButton	 		= $( "<a class='btn button btn-default pull-right' id='extramargin' role='button'>Volgende &raquo;</a>" );
 	var clearfix				= $( '<div class="clearfix">' );
 	var questions;
-	var TableCont				= $("<div style='margin-top: 30px; margin-bottom: 20px; background-color: white; border-style: solid; border-color: lightgrey; border-width: 1px;'></div>");
+	var TableCont				= $("<div style='margin-top: 20px; margin-bottom: 20px; background-color: white; border-style: solid; border-color: lightgrey; border-width: 1px;'></div>");
 	var Table 					= $("<table id='answertable' style='width: 100%'></table>");
 
 	var questions = [
