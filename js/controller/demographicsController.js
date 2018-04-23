@@ -17,7 +17,7 @@ var DemographicsController = function( model, view ){
 		console.log("Remarks : " + remarks);
 		console.log("Email : " + email);
 
-		if( (gender == 1 || gender == 0)  && experienceMastermind != 0 && experienceGames != 0 && selfrate != 0 && age.length != 0) {
+		if( gender != 0  && experienceMastermind != 0 && experienceGames != 0 && selfrate != 0 && age.length != 0) {
 			//model.updateUser(email, age);
 			model.demographicsDone();
 		} else {
