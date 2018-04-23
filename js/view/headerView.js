@@ -45,6 +45,11 @@ var HeaderView = function ( model, container ){
 		}
 
 		if( args == "demographicsDone"){
+				h2.html( "Doorspelen?");
+			}
+
+
+		if( args == "experimentEnd"){
 			h2.html( "Hartelijk Dank!");
 		}
 

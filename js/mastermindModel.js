@@ -7,10 +7,10 @@ var MastermindModel = function( options ){
   // These options should be set from outside the model with
   // the random conditions assigned
 
+  var gamecount = 1;
   var defaults = {
 
   };
-
   var options = $.extend(defaults,options);
   var o = options;
   /***********************************************************
@@ -86,6 +86,7 @@ var MastermindModel = function( options ){
       scale: 5
     }
   ];
+
 
   /***********************************************************
             Helper Functions
@@ -229,6 +230,10 @@ var MastermindModel = function( options ){
     notifyObservers( "demographicsDone" );
   }
 
+  experimentEnd = function(){
+    notifyObservers( "experimentEnd" );
+  }
+
   /***********************************************************
             Public Functions
   ***********************************************************/
@@ -242,6 +247,7 @@ var MastermindModel = function( options ){
   this.setAgqQuestions            = setAgqQuestions;
   this.getAgq1Questions           = getAgq1Questions;
   this.getAgq2Questions           = getAgq2Questions;
+  this.gamecount                  = gamecount;
 
   this.trackGeslacht = trackGeslacht;
   this.trackOpleiding = trackOpleiding;
@@ -253,6 +259,7 @@ var MastermindModel = function( options ){
   this.agqQuestionsDone     = agqQuestionsDone;
   this.demographicsDone     = demographicsDone;
   this.introPlayDone        = introPlayDone;
+  this.experimentEnd        = experimentEnd;
 
   /***********************************************************
             Observable Pattern

@@ -23,4 +23,6 @@ $(function(){
 	var debriefView  = new DebriefView( mastermindModel, $("#debriefView"));
 	var debriefController = new DebriefController (mastermindModel, debriefView);
 
+	var endView  = new EndView( mastermindModel, $("#endView"));
+	var endController = new EndController (mastermindModel, endView);
 })

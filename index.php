@@ -70,6 +70,9 @@
                 <div id="debriefView" >
                 </div>
 
+                <div id="endView" >
+                </div>
+
             </div>
 
           <div id="boxFooter" class='col-md-12 col-md-offset-0' style='width:100%'>
@@ -108,5 +111,7 @@
         <script src="js/view/agqView.js"></script>
         <script src="js/controller/agqController.js"></script>
 
+        <script src="js/view/endView.js"></script>
+        <script src="js/controller/endController.js"></script>
     </body>
 </html>
