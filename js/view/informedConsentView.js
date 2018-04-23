@@ -28,10 +28,10 @@ var InformedConsentView = function(model, container){
 		if(args == "screensizeOkay"){
 			container.show();
 		}
-		/*if( args == "manCheckDone" ){
-			console.log("Close informed consent, proceed to Filter Measures");
-			container.hide();
-		}*/
-	}
+		if ( args == "consentDone" ){
+      container.hide();
+    }
+		}
+
  container.hide();
 }
