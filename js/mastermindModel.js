@@ -170,15 +170,37 @@ var MastermindModel = function( options ){
     notifyObservers( 'playingDone');
   }
 
-  setAgqQuestions = function(question, value) {
-    var questionId = question;
-    var val = value;
+  setAgqQuestions = function(answers) {
+    var q1 = answers[0];
+    var q2 = answers[1];
+    var q3 = answers[2];
+    var q4 = answers[3];
+    var q5 = answers[4];
+    var q6 = answers[5];
+    var q7 = answers[6];
+    var q8 = answers[7];
+    var q9 = answers[8];
+    var q10 = answers[9];
+    var q11 = answers[10];
+    var q12 = answers[11];
 
-    $.post("ajax/insertAgqQuestion.php",
+    console.log(q1+q2+q3+q4+q5+q6+q7+q8+q9+q10+q11+q12);
+
+    $.post("ajax/insertAgqQuestions.php",
       {
         userId: currentUserId,
-        questionId: questionId,
-        value: val
+        q1: q1,
+        q2: q2,
+        q3: q3,
+        q4: q4,
+        q5: q5,
+        q6: q6,
+        q7: q7,
+        q8: q8,
+        q9: q9,
+        q10: q10, 
+        q11: q11,
+        q12: q12
       }).done(function(){
       console.log("The question + answer are saved in the DB");
     });
