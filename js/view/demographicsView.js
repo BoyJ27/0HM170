@@ -20,7 +20,7 @@ var DemographicsView = function( model, container ){
   	var selfratetext = $('<div style="font-size: 12px; font-weight:bold;  width: 100%"><p class="marginbottom">Hoe zou u uzelf beoordelen als Mastermind speler?*</p> ');
 	var selfrateinput = $ ("<div style='font-weight:bold; font-size: 12px; margin-bottom: 15px; width: 100%'><select name='selfrate' id='selfrate' style='width:250px'><option value='0'>---------------</option><option value='1'>Absolute Beginneling</option><option value='2'>Beginner</option><option value='3'>Gemiddeld</option><option value='4'>Gevorderd</option><option value='5'>Expert</option>");
 
-	var gamefreqtext = $('<div style="font-size: 12px; font-weight:bold;  width: 100%"><p class="marginbottom">How vaak speelt u normaal gesproken digitale games? Dit slaat ook op online en video games.*</p> ');
+	var gamefreqtext = $('<div style="font-size: 12px; font-weight:bold;  width: 100%"><p class="marginbottom">Hoe vaak speelt u normaal gesproken digitale games? Dit slaat ook op online en video games.*</p> ');
 	var gamefreqinput = $ ("<div style='font-weight:bold; font-size: 12px; margin-bottom: 15px; width: 100%'><select name='experience' id='experienceGames' style='width:250px'><option value='0'>---------------</option><option value='1'>Minder dan eens per maand</option><option value='2'>Eens per maand</option><option value='3'>Eens per 2 tot 3 weken</option><option value='4'>Eens per week</option><option valu='5'>Meerdere keren per week</option><option value='6'>Dagelijks</option>");
 
 	var remarksinput = $( '<div style="font-weight:bold; font-size: 12px; margin-bottom: 15px; width: 100%" class="input-group"><textarea style="font-weight: normal; width:500px"  type="text" id="remarks" placeholder="Opmerkingen">');

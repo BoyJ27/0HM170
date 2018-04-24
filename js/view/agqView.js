@@ -45,13 +45,13 @@ var AgqView = function (model, container){
 		} else {
 			row = $("<tr class='item-row' id='" + index + "'></tr>");
 		}
-		var textcell = $("<th style='width: 50%; padding-left: 20px; font-weight: normal'><p>" + value + "</p></th>");
+		var textcell = $("<th style='width: 50%; padding-left: 20px; font-weight: normal'><p style='margin-top: 0.5rem!important; margin-bottom: 0.5rem!important;'>" + value + "</p></th>");
 
 		row.append(textcell);
 
 		for(i=0; i < 5; i++) {
 			var j = i+1;
-			row.append("<th style='width: 10%; text-align: center'><p><input type='radio' name='quest"+index+"' value='"+ j +"'></p></th>")	
+			row.append("<th style='width: 10%; text-align: center'><label style='height:100%; width: 100%; margin-bottom: 0px;'><input type='radio' name='quest"+index+"' value='"+ j +"'></label></th>")	
 		}
 
 		Table.append(row);
