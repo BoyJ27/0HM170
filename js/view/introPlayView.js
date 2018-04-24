@@ -1,6 +1,6 @@
 var IntroPlayView = function (model, container) {
 
-  var h1 = $("<p>Spel introductie</p>");
+  var h1 = $("<p>Lees onderstaande instructies aandachtig door. Let op: Als u eenmaal aan het spel bent begonnen, kunt u niet meer terug naar deze instructies.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -9,7 +9,13 @@ var IntroPlayView = function (model, container) {
 
   this.volgendeButton       = volgendeButton;
 
-  container.append(h1, volgendeButtonCont, clearfix);
+  var sliderCont = $('<div></div>')
+  var slider = $('<div><div class="my-slider"><ul><li>My slide</li><li>Another slide</li><li>My last slide</li></ul></div></div>');
+
+
+  container.append(h1, slider, volgendeButtonCont, clearfix);
+
+  $('.my-slider').unslider();
 
   model.addObserver( this );
   this.update = function(args){

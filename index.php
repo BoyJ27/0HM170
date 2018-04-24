@@ -21,6 +21,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/unslider.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -87,7 +88,7 @@
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
         <script  type="text/javascript"  src="js/vendor/jquery.ui.touch-punch.min.js"></script>
-
+        <script src="js/vendor/unslider.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
