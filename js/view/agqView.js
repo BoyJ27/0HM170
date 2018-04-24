@@ -12,23 +12,31 @@ var AgqView = function (model, container){
 
 	var questions = [
 		'Ik probeer het spel helemaal onder de knie te krijgen.',
+		'Ik ben volledig bezig met het spel.',
 		'Ik streef ernaar om het spel goed te doen vergeleken met anderen.',
 		'Mijn doel is om zoveel mogelijk te leren in dit spel.',
+		'Ik vind dat ik goed ben in het spel.',
 		'Ik probeer goed te presteren relatief aan andere spelers.',
-		'Ik probeer te voorkomen dat ik het slechter doe dan andere spelers.',
-		'Mijn doel is om te voorkomen dat ik slecht presteer in het spel vergeleken met anderen.',
+		'Ik heb het gevoel dat ik van alles kan ontdekken in het spel.',
+		'Ik probeer te voorkomen dat ik minder leer dan ik zou kunnen in het spel.',
+		'Ik behaal snel het doel van het spel.',		
+		'Mijn doel is om te voorkomen dat ik slecht speel vergeleken met anderen.',		
 		'Ik streef ernaar om het spel zo volledig mogelijk te begrijpen.',
+		'Ik vind het spel uitdagend.',		
 		'Mijn doel is om beter te spelen dan anderen.',
-		'Mijn doel is om te voorkomen dat ik minder leer dan mogelijk in het spel.',
-		'Ik streef ernaar om te voorkomen dat ik slechter presteer dan andere spelers.',
+		'Ik concentreer me erg tijdens het spelen.',
+		'Mijn doel is om te voorkomen dat ik minder leer dan mogelijk in het spel.',		
+		'Ik streef ernaar om te voorkomen dat ik slechter presteer dan andere spelers.',		
+		'Ik voel tijdsdruk tijdens het spelen.',
 		'Ik streef ernaar om een onvolledig begrip van het spel te voorkomen.',
-		'Ik probeer te voorkomen dat ik het slechter doe dan andere spelers.'
+		'Ik doe veel moeite in het spel.',
+		'Ik probeer te voorkomen dat ik het slechter doe dan andere spelers.'		
 	]
 
 	questionList.empty();
 
 	$.each(questions, function(index, value) {
-		if(index == 0 | index == 6) {
+		if(index == 0 | index == 5 | index == 10 | index == 15) {
 			Table.append("<tr><th style='width: 50%'></th><th style='width: 10%; text-align:center; padding-top: 10px; padding-bottom: 10px'>Helemaal oneens</th><th style='width: 10%; text-align:center; padding-top: 10px; padding-bottom: 10px'>Oneens</th><th style='width: 10%; text-align:center; padding-top: 10px; padding-bottom: 10px'>Niet oneens/eens</th><th style='width: 10%; text-align:center; padding-top: 10px; padding-bottom: 10px'>Eens</th><th style='width: 10%; text-align:center; padding-top: 10px; padding-bottom: 10px'>Helemaal eens</th></tr>");
 		} 
 		var row;
