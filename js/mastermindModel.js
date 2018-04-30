@@ -134,7 +134,7 @@ var MastermindModel = function( options ){
         tid: tid
       }).done( function( data ) {
         currentUserId = data;
-        window.location = "#" + currentUserId; 
+        window.location = "#" + currentUserId;
         console.log(currentUserId);
       });
   }
@@ -191,7 +191,7 @@ var MastermindModel = function( options ){
     var q18 = answers[17];
     var q19 = answers[18];
     var q20 = answers[19];
-    
+
     $.post("ajax/insertAgqQuestions.php",
       {
         userId: currentUserId,
@@ -204,7 +204,7 @@ var MastermindModel = function( options ){
         q7: q7,
         q8: q8,
         q9: q9,
-        q10: q10, 
+        q10: q10,
         q11: q11,
         q12: q12,
         q13: q13,
@@ -307,6 +307,42 @@ var MastermindModel = function( options ){
     notifyObservers("introPlayDone");
   }
 
+  introPlay2Done = function(){
+    notifyObservers("introPlay2Done");
+  }
+
+  introPlay3Done = function(){
+    notifyObservers("introPlay3Done");
+  }
+
+  introPlay4Done = function(){
+    notifyObservers("introPlay4Done");
+  }
+
+  introPlay5Done = function(){
+    notifyObservers("introPlay5Done");
+  }
+
+  introPlay6Done = function(){
+    notifyObservers("introPlay6Done");
+  }
+
+  introPlay7Done = function(){
+    notifyObservers("introPlay7Done");
+  }
+
+  introPlay8Done = function(){
+    notifyObservers("introPlay8Done");
+  }
+
+  introPlay9Done = function(){
+    notifyObservers("introPlay9Done");
+  }
+
+  introPlay10Done = function(){
+    notifyObservers("introPlay10Done");
+  }
+
   playingDone = function(){
     notifyObservers("playingDone");
   }
@@ -355,6 +391,15 @@ var MastermindModel = function( options ){
   this.agqQuestionsDone     = agqQuestionsDone;
   this.demographicsDone     = demographicsDone;
   this.introPlayDone        = introPlayDone;
+  this.introPlay2Done        = introPlay2Done;
+  this.introPlay3Done        = introPlay3Done;
+  this.introPlay4Done        = introPlay4Done;
+  this.introPlay5Done        = introPlay5Done;
+  this.introPlay6Done        = introPlay6Done;
+  this.introPlay7Done        = introPlay7Done;
+  this.introPlay8Done        = introPlay8Done;
+  this.introPlay9Done        = introPlay9Done;
+  this.introPlay10Done        = introPlay10Done;
   this.experimentEnd        = experimentEnd;
 
   /***********************************************************

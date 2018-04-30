@@ -9,7 +9,6 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/jquery.raty.css">
 
@@ -21,7 +20,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/unslider.css">
+
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -62,6 +61,33 @@
                 <div id="introducePlay" >
                 </div>
 
+                <div id="introduce2Play" >
+                </div>
+
+                <div id="introduce3Play" >
+                </div>
+
+                <div id="introduce4Play" >
+                </div>
+
+                <div id="introduce5Play" >
+                </div>
+
+                <div id="introduce6Play" >
+                </div>
+
+                <div id="introduce7Play" >
+                </div>
+
+                <div id="introduce8Play" >
+                </div>
+
+                <div id="introduce9Play" >
+                </div>
+
+                <div id="introduce10Play" >
+                </div>
+
                 <div id="playGame">
                 </div>
 
@@ -88,7 +114,7 @@
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
         <script  type="text/javascript"  src="js/vendor/jquery.ui.touch-punch.min.js"></script>
-        <script src="js/vendor/unslider.js"></script>
+
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
@@ -105,6 +131,33 @@
 
         <script src="js/view/introPlayView.js"></script>
         <script src="js/controller/introPlayController.js"></script>
+
+        <script src="js/view/introPlay2View.js"></script>
+        <script src="js/controller/introPlay2Controller.js"></script>
+
+        <script src="js/view/introPlay3View.js"></script>
+        <script src="js/controller/introPlay3Controller.js"></script>
+
+        <script src="js/view/introPlay4View.js"></script>
+        <script src="js/controller/introPlay4Controller.js"></script>
+
+        <script src="js/view/introPlay5View.js"></script>
+        <script src="js/controller/introPlay5Controller.js"></script>
+
+        <script src="js/view/introPlay6View.js"></script>
+        <script src="js/controller/introPlay6Controller.js"></script>
+
+        <script src="js/view/introPlay7View.js"></script>
+        <script src="js/controller/introPlay7Controller.js"></script>
+
+        <script src="js/view/introPlay8View.js"></script>
+        <script src="js/controller/introPlay8Controller.js"></script>
+
+        <script src="js/view/introPlay9View.js"></script>
+        <script src="js/controller/introPlay9Controller.js"></script>
+
+        <script src="js/view/introPlay10View.js"></script>
+        <script src="js/controller/introPlay10Controller.js"></script>
 
         <script src="js/view/playView.js"></script>
         <script src="js/controller/playController.js"></script>

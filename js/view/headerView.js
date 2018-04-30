@@ -32,7 +32,7 @@ var HeaderView = function ( model, container ){
 			h2.html( "Introductie Mastermind");
 		}
 
-		if( args == "introPlayDone" ){
+		if( args == "introPlay10Done" ){
 			h2.html( "Mastermind Spelen");
 		}
 

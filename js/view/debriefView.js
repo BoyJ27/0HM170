@@ -1,7 +1,7 @@
 var DebriefView = function (model, container){
 
-  var p1 = $("<p>U heeft alle vragen beantwoord. Hoewel we aan gaven dat u nu terug naar het spel zou gaan, kunt u vanaf nu beslissen om uw deelname te beëindigen. U doet dit door op de knop ‘Experiment Beëindigen’ te klikken. Echter, als u het spel nog wilt spelen, kunt u ook klikken op ‘Doorspelen’. Op elk moment tijdens het spelen kunt u klikken op de knop ‘Experiment Beëindigen’ om uw deelname te voltooien. </p>")
-  var p2 = $("<p>Als u uw emailadres heeft ingevuld, doet u automatisch mee aan de loterij voor een €10,- cadeaukaart van Bol.com. Als u geselecteerd wordt, ontvangt u een email van ons binnen een maand met bijgevoegd een digitale versie van de cadeaukaart. Bedankt voor uw deelname.</p>")
+  var p1 = $("<p>Je hebt alle vragen beantwoord. Hoewel we aangaven dat je nu terug naar het spel zou gaan, kun je vanaf nu beslissen om je deelname te beëindigen. Je doet dit door op de knop ‘Experiment Beëindigen’ te klikken. Echter, als je het spel nog wilt spelen, kunt je ook klikken op ‘Doorspelen’. Op elk moment tijdens het spelen kun je klikken op de knop ‘Experiment Beëindigen’ om je deelname alsnog te voltooien. </p>")
+  var p2 = $("<p>Als je een emailadres hebt ingevuld, doe je automatisch mee aan de loterij voor een cadeaukaart van Bol.com t.w.v. €10,-. Als je geselecteerd wordt, ontvang je binnen zes weken van ons een email met bijgevoegd een digitale versie van de cadeaukaart. Bedankt voor je deelname!</p>");
 
   var buttons = $("<center></center>");
   var doorspelen = $( "<a class='btn button btn-default pull-right' id='doorspelen' role='button'>Doorspelen</a>" );

@@ -1,27 +1,26 @@
 var IntroPlayView = function (model, container) {
 
-  var h1 = $("<p>Lees onderstaande instructies aandachtig door. Let op: Als u eenmaal aan het spel bent begonnen, kunt u niet meer terug naar deze instructies.</p>");
+  var h1 = $("<p>Lees onderstaande instructies aandachtig door. Klik op telkens 'Volgende' om door te gaan. Let op: Als je eenmaal op 'Volgende' hebt geklikt, kun je niet meer terugbladeren door deze instructies.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
 
   volgendeButtonCont.append(volgendeButton);
-
   this.volgendeButton       = volgendeButton;
 
-  var sliderCont = $('<div></div>')
-  var slider = $('<div><div class="my-slider"><ul><li>My slide</li><li>Another slide</li><li>My last slide</li></ul></div></div>');
+  var instruction1Cont = $('<div></div>');
+  var instruction1 = $('<center><img id="instruction1" style="max-width:600px; margin-bottom:15px;" src="img/Instruction1.jpg"/><center>');
 
+  instruction1Cont.append(instruction1);
+  container.append(h1, instruction1Cont, volgendeButtonCont, clearfix);
 
-  container.append(h1, slider, volgendeButtonCont, clearfix);
-
-  $('.my-slider').unslider();
 
   model.addObserver( this );
   this.update = function(args){
     if ( args == "consentDone"){
         //The container is visible, the elements within it might be hidden
         container.show();
+        setTimeout(function(){ $('#timedbutton').prop("disabled", false);; }, 3000);
       }
 
     if ( args == "introPlayDone" ){
