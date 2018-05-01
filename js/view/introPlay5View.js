@@ -1,5 +1,5 @@
 var IntroPlay5View = function (model, container) {
-
+  var h2 = $("<p>Een wit pinnetje vertelt je dat een kraal de juiste kleur heeft. Een rood pinnetje vertelt je dat een kraal de juiste kleur heeft én op de goede plek staat. In dit geval zijn alle kleuren juist, maar staat er slechts één op de juiste plek. Je weet alleen niet welke; de pinnetjes staan niet per se in dezelfde volgorde als de kraaltjes.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -12,7 +12,7 @@ var IntroPlay5View = function (model, container) {
 
   instruction1Cont.append(instruction1);
 
-  container.append( instruction1Cont, volgendeButtonCont, clearfix);
+  container.append(h2, instruction1Cont, volgendeButtonCont, clearfix);
 
 
   model.addObserver( this );

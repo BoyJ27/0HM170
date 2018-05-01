@@ -1,5 +1,5 @@
 var IntroPlay8View = function (model, container) {
-
+  var h2 = $("<p>Je kan een potje overslaan door op ‘Spel Overslaan’ te klikken. Je krijgt daarna de mogelijkheid om een nieuw potje te starten. </p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -12,7 +12,7 @@ var IntroPlay8View = function (model, container) {
 
   instruction1Cont.append(instruction1);
 
-  container.append( instruction1Cont, volgendeButtonCont, clearfix);
+  container.append(h2, instruction1Cont, volgendeButtonCont, clearfix);
 
 
   model.addObserver( this );

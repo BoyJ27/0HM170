@@ -1,5 +1,5 @@
 var IntroPlay9View = function (model, container) {
-
+  var h2 = $("<p>Nadat het spel is afgelopen (nadat alle beurten zijn gebruikt of nadat je een spel hebt overgeslagen), kun je de moeilijkheidsgraad van het volgende potje kiezen. Er zijn in totaal 8 verschillende levels die oplopen in moeilijkheidsgraad.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -12,7 +12,7 @@ var IntroPlay9View = function (model, container) {
 
   instruction1Cont.append(instruction1);
 
-  container.append( instruction1Cont, volgendeButtonCont, clearfix);
+  container.append(h2,  instruction1Cont, volgendeButtonCont, clearfix);
 
 
   model.addObserver( this );

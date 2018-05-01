@@ -1,5 +1,6 @@
 var IntroPlay10View = function (model, container) {
-
+  var h2 = $("<p><b>BELANGRIJK: Nadat je 8 minuten hebt gespeeld, ontvang je een melding en wordt de ‘Volgende’-knop onder het spel klikbaar. Na het klikken krijg je enkele vragen over je ervaringen tijdens het spelen. Daarna keer je weer terug bij het spel en speel je nog enkele minuten verder. Je voortgang wordt opgeslagen, dus je kunt na het invullen van de vragen verder waar je gebleven was.</b></p>");
+  var h3 = $("<p>Klik nu op onderstaande ‘Volgende’-knop. Na een korte laadtijd zal het spel beginnen.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<button class='btn button btn-default pull-right' style='color:black;' id='timedbutton' role='button' disabled>Volgende &raquo;</button>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -7,12 +8,7 @@ var IntroPlay10View = function (model, container) {
 
   volgendeButtonCont.append(volgendeButton);
   this.volgendeButton       = volgendeButton;
-
-  var instruction1Cont = $('<div></div>');
-  var instruction1 = $('<center><img id="instruction10" style="max-width:600px; margin-bottom:15px;" src="img/Instruction10.jpg"/><center>');
-
-  instruction1Cont.append(instruction1);
-  container.append(instruction1Cont, buttonCont, clearfix);
+  container.append(h2, h3, buttonCont, clearfix);
 
 
   model.addObserver( this );

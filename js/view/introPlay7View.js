@@ -1,5 +1,5 @@
 var IntroPlay7View = function (model, container) {
-
+  var h2 = $("<p>Tijdens het spel kun je het scorebord bekijken. Je ziet dan de topscores van speler die je voorgingen.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );
@@ -12,7 +12,7 @@ var IntroPlay7View = function (model, container) {
 
   instruction1Cont.append(instruction1);
 
-  container.append( instruction1Cont, volgendeButtonCont, clearfix);
+  container.append(h2, instruction1Cont, volgendeButtonCont, clearfix);
 
 
   model.addObserver( this );
