@@ -5,11 +5,11 @@ class medoo {
 
 	// For MySQL, MariaDB, MSSQL, Sybase, PostgreSQL, Oracle
 	//protected $server = 'mysql02.totaalholding.nl';
-	protected $server = "Linux2.webhosting.tue.nl";
+	protected $server = "localhost";
 
-	protected $username = "ebraad";
+	protected $username = "root";
 
-	protected $password = "Vim@b828";
+	protected $password = "";
 
 	// For SQLite
 	protected $database_file = '';
@@ -17,7 +17,7 @@ class medoo {
 	// Optional
 	protected $port = 3306;
 	protected $charset = 'utf8';
-	protected $database_name = 'db_ebraad';
+	protected $database_name = 'gamelab_18';
 	protected $option = array();
 	//protected $socket = /tmp/mysql.sock;
 

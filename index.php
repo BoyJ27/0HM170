@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/jquery.raty.css">
+        <link rel="shortcut icon" href="TemplateData/favicon.ico">
+        <link rel="stylesheet" href="TemplateData/style.css">
 
         <style>
             body {
@@ -26,6 +28,9 @@
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="TemplateData/UnityProgress.js"></script>  
+	    <script src="Build/UnityLoader.js"></script>
+        
 
     </head>
     <body>
