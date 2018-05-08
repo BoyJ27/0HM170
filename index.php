@@ -28,8 +28,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="TemplateData/UnityProgress.js"></script>  
-	    <script src="Build/UnityLoader.js"></script>
+        
         
 
     </head>
