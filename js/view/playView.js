@@ -16,7 +16,6 @@ var PlayView = function (model, container){
 	volgendeButtonCont.append(volgendeButton);
 	container.append(textCont, game, buttonCont);
 	
-	var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Documents.json", {onProgress: UnityProgress});
 
 	model.addObserver( this );
 
@@ -24,7 +23,9 @@ var PlayView = function (model, container){
 	this.update = function( args ){
 
 		if( args == "introPlay10Done"){
-      container.show();
+			var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Documents.json", {onProgress: UnityProgress});			
+			
+			container.show();
 			if (model.gamecount == 1){
 			setTimeout(function(){ $('#timedbutton2').prop("disabled", false);; }, 3000);
 			textCont.append(h1);
