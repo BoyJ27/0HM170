@@ -19,30 +19,35 @@ var PlayView = function (model, container){
 
 	model.addObserver( this );
 
+	var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json", {onProgress: UnityProgress});
+	setTimeout(function() {gameInstance.SendMessage('Main Camera', 'disableCamera');}, 3000); 		
+	
+
 
 	this.update = function( args ){
+		setTimeout(function() {gameInstance.SendMessage('Main Camera', 'disableCamera');}, 100); 		
 
 		if( args == "introPlay10Done"){
-			var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Documents.json", {onProgress: UnityProgress});			
-			
+			console.log("Camera on");
+			setTimeout(function() {gameInstance.SendMessage('Main Camera', 'enableCamera');}, 100); 
+
 			container.show();
 			if (model.gamecount == 1){
-			setTimeout(function(){ $('#timedbutton2').prop("disabled", false);; }, 3000);
-			textCont.append(h1);
-			buttonCont.append(volgendeButtonCont);
-
-		} else if (model.gamecount == 2) {
-			textCont.empty();
-			buttonCont.empty();
-			textCont.append(h2);
-			buttonCont.append(stoppenCont);
+				setTimeout(function(){ $('#timedbutton2').prop("disabled", false);; }, 3000);
+				textCont.append(h1);
+				buttonCont.append(volgendeButtonCont);
+			} else if (model.gamecount == 2) {
+				textCont.empty();
+				buttonCont.empty();
+				textCont.append(h2);
+				buttonCont.append(stoppenCont);
+			}
 		}
-
-	}
-
+		
 		if( args == "playingDone" || args == 'experimentEnd'){
 			container.hide();
 		}
+
 	}
 
 	container.hide();
