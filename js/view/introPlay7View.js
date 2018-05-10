@@ -1,5 +1,5 @@
 var IntroPlay7View = function (model, container) {
-  var h2 = $("<p>Tijdens het spel kun je het scorebord bekijken. Je ziet dan de topscores van speler die je voorgingen.</p>");
+  var h2 = $("<p>Tijdens het spel kun je het scorebord bekijken. Je ziet dan de topscores van spelers die je voorgingen.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );

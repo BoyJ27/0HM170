@@ -20,7 +20,7 @@ var DebriefView = function (model, container){
 		if( args == "demographicsDone" ){
 			container.show();
 		}
-    if( args == 'introPlayDone' || args == 'experimentEnd' ){
+    if( args == 'introPlay10Done' || args == 'experimentEnd' ){
 			container.hide();
 		}
 	}
