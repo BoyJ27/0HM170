@@ -1,5 +1,5 @@
 var IntroPlay6View = function (model, container) {
-  var h2 = $("<p>Kom je er niet uit? Dan kun je de hulp inschakelen van de computer. Als je een hint vraagt dan rekent de computer de meest logische volgende zet uit. Als je spiekt, dan krijg je willekeurig één juiste kraal te zien. Als je besluit te ‘spieken’ of een ‘hint’ te gebruiken, dan krijg je minder punten voor een goed antwoord.</p>");
+  var h2 = $("<p>Kom je er niet uit? Dan kun je de hulp inschakelen van de computer. Als je een hint vraagt dan rekent de computer de meest logische volgende zet uit en vult hem vast voor je in. Als je spiekt, dan krijg je willekeurig één juiste kraal te zien. Als je besluit te ‘spieken’ of een ‘hint’ te gebruiken, dan krijg je minder punten voor een goed antwoord.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );

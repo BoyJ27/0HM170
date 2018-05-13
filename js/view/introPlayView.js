@@ -1,7 +1,7 @@
 var IntroPlayView = function (model, container) {
 
-  var h1 = $("<p><b>Lees onderstaande instructies aandachtig door. Klik op telkens 'Volgende' om door te gaan. Let op: Als je eenmaal op 'Volgende' hebt geklikt, kun je niet meer terugbladeren door deze instructies.</b></p>");
-  var h2 = $("<p>Bij aanvang van het spel zie je onderstaand openingsscherm. Vul een gebruikersnaam in en druk op volgende. NB: Je bent uiteraard vrij om een schuilnaam te kiezen. </p>");
+  var h1 = $("<p><b>Lees onderstaande instructies aandachtig door. Klik telkens op 'Volgende' om door te gaan. Let op: Als je eenmaal op 'Volgende' hebt geklikt, kun je niet meer terugbladeren door deze instructies.</b></p>");
+  var h2 = $("<p>Bij aanvang van het spel zie je onderstaand openingsscherm. Vul een gebruikersnaam van minimaal 3 letters in en druk op volgende. NB: Je bent uiteraard vrij om een schuilnaam te kiezen. </p>");
   var caption = $("<center><p>Deze plaatjes zijn voorbeelden; je hoeft hier niets in te vullen.</p></center>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );

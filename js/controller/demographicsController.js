@@ -21,7 +21,7 @@ var DemographicsController = function( model, view ){
 			model.setDemoQuestions(age, gender, experienceMastermind, experienceGames, selfrate, remarks, email);
 			model.demographicsDone();
 		} else {
-			alert( 'U bent waarschijnlijk een vraag vergeten!' );
+			alert( 'Je bent waarschijnlijk een vraag vergeten!' );
 		}
 	});
 

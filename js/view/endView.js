@@ -1,6 +1,6 @@
 var EndView = function (model, container){
 
-  var p1 = $("<p>Je deelname is succesvol afgerond. Je kunt nu je browser sluiten.</p>");
+  var p1 = $("<p>Je deelname is succesvol afgerond. Je kunt nu dit tabblad of je browser sluiten.</p>");
   var clearfix = $( '<div class="clearfix">' );
 
   container.append(p1, clearfix);

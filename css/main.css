@@ -406,3 +406,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 .droppedtext p {
 	margin-bottom: 0px;
 }
+
+#timedbutton3 {
+	color: lightgrey;
+}

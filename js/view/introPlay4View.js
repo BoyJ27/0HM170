@@ -1,5 +1,5 @@
 var IntroPlay4View = function (model, container) {
-  var h2 = $("<p>Door op de zwarte kraaltjes aan de linkerkant te klikken, kun je ze van kleur laten veranderen. Om een code te bevestigen, druk je op het driehoekje naast de zojuist ingevoerde code. </p>");
+  var h2 = $("<p>Door op de zwarte kraaltjes aan de linkerkant te klikken, kun je ze van kleur laten veranderen. Om een code te proberen, druk je op het driehoekje naast de zojuist ingevoerde code. </p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );

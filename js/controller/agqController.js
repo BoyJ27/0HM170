@@ -2,7 +2,7 @@ var AgqController = function(model, view) {
 
 	view.volgendeButton.click(function(){
 	 if( $( '#answertable input:checked' ).length < 20 ){
-			alert( 'U bent waarschijnlijk een vraag vergeten!' );
+			alert( 'Je bent waarschijnlijk een vraag vergeten!' );
 		} else {
 			var answers = [];
 							

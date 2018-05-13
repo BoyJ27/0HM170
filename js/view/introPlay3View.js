@@ -1,6 +1,6 @@
 var IntroPlay3View = function (model, container) {
 
-  var h2 = $("<p>In de bovenste grijze balk zie je respectievelijk; je gebruikersnaam, het level waar je op dit moment in zit en je huidige score. Het aantal punten dat je voor een juist antwoord krijgt, hangt af van het level (moeilijkheid) en het aantal beurten dat je nodig had om de code te kraken. Als je een code niet raadt, krijg je alsnog punten voor de kralen die wél op de juiste plek staan.</p>");
+  var h2 = $("<p>In de bovenste grijze balk zie je van links naar rechts; jouw gebruikersnaam, het level waar je op dit moment in zit en jouw huidige score. Het aantal punten dat je voor een juist antwoord krijgt, hangt af van het level (moeilijkheid) en het aantal beurten dat je nodig had om de code te kraken. Als je een code niet raadt, krijg je alsnog punten voor de kralen die wél op de juiste plek staan.</p>");
   var volgendeButtonCont		= $("<center></center>");
   var volgendeButton    = $( "<a class='btn button btn-default pull-right' role='button'>Volgende &raquo;</a>" );
   var clearfix          = $( '<div class="clearfix">' );

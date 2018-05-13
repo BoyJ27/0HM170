@@ -93,9 +93,6 @@
                 <div id="introduce10Play" >
                 </div>
 
-                <div id="playGame">
-                </div>
-
                 <div id="agqQuestions">
                 </div>
 
@@ -106,6 +103,9 @@
                 </div>
 
                 <div id="endView" >
+                </div>
+
+                <div id="playGame">
                 </div>
 
             </div>
@@ -164,9 +164,6 @@
         <script src="js/view/introPlay10View.js"></script>
         <script src="js/controller/introPlay10Controller.js"></script>
 
-        <script src="js/view/playView.js"></script>
-        <script src="js/controller/playController.js"></script>
-
         <script src="js/view/debriefView.js"></script>
         <script src="js/controller/debriefController.js"></script>
 
@@ -178,5 +175,8 @@
 
         <script src="js/view/toosmallView.js"></script>
         <script src="js/controller/toosmallController.js"></script>
+
+        <script src="js/view/playView.js"></script>
+        <script src="js/controller/playController.js"></script>
     </body>
 </html>
